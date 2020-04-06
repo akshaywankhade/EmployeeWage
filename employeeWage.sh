@@ -4,7 +4,7 @@ IS_PRESENT=1
 
 checkEmployee=$(( RANDOM%2 ))
 
-if (( $checkEmployee==$IS_PRESENT ))
+if [[ $checkEmployee -eq $IS_PRESENT ]]
 then
 	printf "Employee Is Present"
 else
